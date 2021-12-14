@@ -7,11 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C437870E2764B955002FA890 /* IosMobileChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C462CF852764B85F006EA902 /* IosMobileChallenge.framework */; };
+		C437870F2764B955002FA890 /* IosMobileChallenge.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C462CF852764B85F006EA902 /* IosMobileChallenge.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C462CF722764B84A006EA902 /* MainAppMobileChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C462CF712764B84A006EA902 /* MainAppMobileChallengeApp.swift */; };
 		C462CF742764B84A006EA902 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C462CF732764B84A006EA902 /* ContentView.swift */; };
 		C462CF762764B84C006EA902 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C462CF752764B84C006EA902 /* Assets.xcassets */; };
 		C462CF792764B84C006EA902 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C462CF782764B84C006EA902 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C462CF842764B85F006EA902 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C462CF7F2764B85F006EA902 /* IosMobileChallenge.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C462CF482764A9A2006EA902;
+			remoteInfo = IosMobileChallenge;
+		};
+		C462CF862764B85F006EA902 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C462CF7F2764B85F006EA902 /* IosMobileChallenge.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C462CF522764A9A2006EA902;
+			remoteInfo = IosMobileChallengeTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C43787102764B955002FA890 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C437870F2764B955002FA890 /* IosMobileChallenge.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C462CF6E2764B84A006EA902 /* MainAppMobileChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MainAppMobileChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +52,7 @@
 		C462CF732764B84A006EA902 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C462CF752764B84C006EA902 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C462CF782764B84C006EA902 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C462CF7F2764B85F006EA902 /* IosMobileChallenge.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IosMobileChallenge.xcodeproj; path = ../../IosMobileChallenge/IosMobileChallenge.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +60,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C437870E2764B955002FA890 /* IosMobileChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C437870B2764B955002FA890 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C462CF652764B84A006EA902 = {
 			isa = PBXGroup;
 			children = (
 				C462CF702764B84A006EA902 /* MainAppMobileChallenge */,
 				C462CF6F2764B84A006EA902 /* Products */,
+				C437870B2764B955002FA890 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +94,7 @@
 		C462CF702764B84A006EA902 /* MainAppMobileChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				C462CF7F2764B85F006EA902 /* IosMobileChallenge.xcodeproj */,
 				C462CF712764B84A006EA902 /* MainAppMobileChallengeApp.swift */,
 				C462CF732764B84A006EA902 /* ContentView.swift */,
 				C462CF752764B84C006EA902 /* Assets.xcassets */,
@@ -67,6 +111,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		C462CF802764B85F006EA902 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C462CF852764B85F006EA902 /* IosMobileChallenge.framework */,
+				C462CF872764B85F006EA902 /* IosMobileChallengeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +130,7 @@
 				C462CF6A2764B84A006EA902 /* Sources */,
 				C462CF6B2764B84A006EA902 /* Frameworks */,
 				C462CF6C2764B84A006EA902 /* Resources */,
+				C43787102764B955002FA890 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -113,12 +167,35 @@
 			mainGroup = C462CF652764B84A006EA902;
 			productRefGroup = C462CF6F2764B84A006EA902 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C462CF802764B85F006EA902 /* Products */;
+					ProjectRef = C462CF7F2764B85F006EA902 /* IosMobileChallenge.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C462CF6D2764B84A006EA902 /* MainAppMobileChallenge */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C462CF852764B85F006EA902 /* IosMobileChallenge.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = IosMobileChallenge.framework;
+			remoteRef = C462CF842764B85F006EA902 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C462CF872764B85F006EA902 /* IosMobileChallengeTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = IosMobileChallengeTests.xctest;
+			remoteRef = C462CF862764B85F006EA902 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C462CF6C2764B84A006EA902 /* Resources */ = {
